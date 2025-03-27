@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI時代のノーコード／ローコード開発ツール徹底比較 - ユースケース別最適ツール</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .comparison-slide {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2b5876;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        .usecase-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px;
+            margin-top: 20px;
+        }
+        .usecase-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .usecase-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #4e4376;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+        .tool-recommendation {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .tool-logo {
+            background-color: rgba(78, 67, 118, 0.2);
+            border-radius: 6px;
+            padding: 6px;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #4e4376;
+        }
+        .tool-name {
+            font-weight: 600;
+        }
+        .reason {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide comparison-slide">
+        <h1>ユースケース別最適ツール分析</h1>
+        
+        <div class="intro-text">
+            プロジェクトの種類や目的によって最適なツールは異なります。代表的なユースケース別に、最も適したツールとその理由を分析しました。
+        </div>
+        
+        <div class="usecase-grid">
+            <div class="usecase-card">
+                <div class="usecase-title">UIコンポーネント開発</div>
+                <div class="tool-recommendation">
+                    <div class="tool-logo">v0</div>
+                    <div class="tool-name">v0 (Vercel)</div>
+                </div>
+                <div class="reason">
+                    高品質なUIコンポーネント生成に特化しており、Reactプロジェクトとの統合が容易。Figmaとの連携も強力で、デザイナーとの協業に最適。
+                </div>
+            </div>
+            
+            <div class="usecase-card">
+                <div class="usecase-title">フルスタックアプリ開発</div>
+                <div class="tool-recommendation">
+                    <div class="tool-logo">R</div>
+                    <div class="tool-name">Replit</div>
+                </div>
+                <div class="reason">
+                    フロントエンドからバックエンド、データベースまで一括で生成可能。多言語対応で複雑なアプリケーション開発に最適。拡張性も非常に高い。
+                </div>
+            </div>
+            
+            <div class="usecase-card">
+                <div class="usecase-title">プロトタイピング</div>
+                <div class="tool-recommendation">
+                    <div class="tool-logo">C</div>
+                    <div class="tool-name">Create</div>
+                </div>
+                <div class="reason">
+                    最新のAIモデルを活用した高速プロトタイピングが可能。テンプレートも豊富で、アイデアを素早く形にできる。非エンジニアでも使いやすい。
+                </div>
+            </div>
+            
+            <div class="usecase-card">
+                <div class="usecase-title">教育・学習用途</div>
+                <div class="tool-recommendation">
+                    <div class="tool-logo">B</div>
+                    <div class="tool-name">Bolt (StackBlitz)</div>
+                </div>
+                <div class="reason">
+                    WebContainer技術により環境構築不要で学習を開始できる。多様なフレームワーク対応で、様々な技術スタックの学習に適している。
+                </div>
+            </div>
+            
+            <div class="usecase-card">
+                <div class="usecase-title">チーム開発</div>
+                <div class="tool-recommendation">
+                    <div class="tool-logo">R</div>
+                    <div class="tool-name">Replit</div>
+                </div>
+                <div class="reason">
+                    リアルタイム協力開発機能が充実しており、チームでの開発に最適。バージョン管理も統合されており、複数人での作業効率が高い。
+                </div>
+            </div>
+            
+            <div class="usecase-card">
+                <div class="usecase-title">モバイルアプリ開発</div>
+                <div class="tool-recommendation">
+                    <div class="tool-logo">B</div>
+                    <div class="tool-name">Bolt (StackBlitz)</div>
+                </div>
+                <div class="reason">
+                    Expoを使用したモバイルアプリ開発に対応しており、クロスプラットフォーム開発が可能。WebContainerでの開発環境が整っている。
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

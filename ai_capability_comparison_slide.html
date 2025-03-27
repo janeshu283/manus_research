@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI時代のノーコード／ローコード開発ツール徹底比較 - 機能比較</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .comparison-slide {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2b5876;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: rgba(78, 67, 118, 0.1);
+            color: #4e4376;
+            font-weight: 600;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .tool-header {
+            font-weight: 600;
+            color: #2b5876;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating-dots {
+            display: flex;
+            margin-left: 10px;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+        .dot-filled {
+            background-color: #4e4376;
+        }
+        .dot-empty {
+            background-color: #ddd;
+        }
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide comparison-slide">
+        <h1>AI機能と生成能力比較</h1>
+        
+        <div class="intro-text">
+            AI駆動型ノーコード/ローコードツールの核心は、AIによるコード生成能力にあります。各ツールのAI機能と生成能力を詳細に比較しました。
+        </div>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>ツール</th>
+                    <th>対応AIモデル</th>
+                    <th>プロンプト理解度</th>
+                    <th>生成コード品質</th>
+                    <th>複雑要件対応</th>
+                    <th>生成速度</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tool-header">v0 (Vercel)</td>
+                    <td>独自AIモデル</td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            非常に高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中〜高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高速
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tool-header">Replit</td>
+                    <td>Replit Agent (独自)</td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中速
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tool-header">Bolt (StackBlitz)</td>
+                    <td>独自AIモデル</td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高速
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tool-header">Create</td>
+                    <td>Claude 3.5 Sonnet<br>GPT-4o<br>Stable Diffusion等</td>
+                    <td>
+                        <div class="rating">
+                            非常に高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中〜高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中速
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

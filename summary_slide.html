@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI時代のノーコード／ローコード開発ツール徹底比較 - 総合評価</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .summary-slide {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2b5876;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px;
+            margin-top: 20px;
+        }
+        .tool-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+        .tool-logo {
+            background-color: rgba(78, 67, 118, 0.2);
+            border-radius: 6px;
+            padding: 6px;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #4e4376;
+        }
+        .tool-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #4e4376;
+        }
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+        }
+        .pros, .cons {
+            font-size: 14px;
+        }
+        .pros h3, .cons h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .pros h3 {
+            color: #2b7651;
+        }
+        .cons h3 {
+            color: #763a2b;
+        }
+        .pros ul, .cons ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .pros li, .cons li {
+            margin-bottom: 5px;
+        }
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide summary-slide">
+        <h1>総合評価と比較まとめ</h1>
+        
+        <div class="intro-text">
+            各ツールの長所・短所を総合的に評価し、それぞれの特徴をまとめました。プロジェクトの要件に合わせて最適なツールを選択する際の参考にしてください。
+        </div>
+        
+        <div class="summary-grid">
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-logo">v0</div>
+                    <div class="tool-name">v0 (Vercel)</div>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>長所</h3>
+                        <ul>
+                            <li>高品質なUIコンポーネント生成</li>
+                            <li>React/Next.jsとの優れた統合性</li>
+                            <li>Figmaとの強力な連携</li>
+                            <li>コード編集の自由度が高い</li>
+                            <li>コミュニティ機能が充実</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h3>短所</h3>
+                        <ul>
+                            <li>UIに特化しており機能が限定的</li>
+                            <li>バックエンド開発の対応が弱い</li>
+                            <li>React/Next.js以外の対応が限られる</li>
+                            <li>モバイルアプリ開発に非対応</li>
+                            <li>学習曲線がやや高い</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-logo">R</div>
+                    <div class="tool-name">Replit</div>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>長所</h3>
+                        <ul>
+                            <li>フルスタック開発に対応</li>
+                            <li>多言語・多フレームワーク対応</li>
+                            <li>データベース連携が容易</li>
+                            <li>拡張性が非常に高い</li>
+                            <li>チーム開発機能が充実</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h3>短所</h3>
+                        <ul>
+                            <li>UIデザインの品質はv0に劣る</li>
+                            <li>生成速度がやや遅い</li>
+                            <li>デザインツール連携が限定的</li>
+                            <li>初心者には複雑に感じる場合も</li>
+                            <li>リソース制限が厳しい場合がある</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-logo">B</div>
+                    <div class="tool-name">Bolt (StackBlitz)</div>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>長所</h3>
+                        <ul>
+                            <li>WebContainer技術による環境構築不要</li>
+                            <li>多フレームワーク対応</li>
+                            <li>Figma連携が強力</li>
+                            <li>モバイルアプリ開発対応</li>
+                            <li>生成速度が速い</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h3>短所</h3>
+                        <ul>
+                            <li>比較的新しいツールで事例が少ない</li>
+                            <li>一部の複雑な要件に対応しきれない</li>
+                            <li>ブラウザ依存のため制約がある</li>
+                            <li>大規模プロジェクトには不向き</li>
+                            <li>コミュニティがまだ発展途上</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-logo">C</div>
+                    <div class="tool-name">Create</div>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>長所</h3>
+                        <ul>
+                            <li>多様なAIモデルを活用</li>
+                            <li>40以上の統合機能</li>
+                            <li>非エンジニアでも使いやすい</li>
+                            <li>テンプレートが豊富</li>
+                            <li>プロトタイピングに最適</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h3>短所</h3>
+                        <ul>
+                            <li>コード編集の自由度が低い</li>
+                            <li>複雑な要件への対応が弱い</li>
+                            <li>拡張性に制限がある</li>
+                            <li>生成コードの品質にばらつき</li>
+                            <li>有料プランが比較的高価</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

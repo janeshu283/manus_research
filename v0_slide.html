@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI時代のノーコード／ローコード開発ツール徹底比較 - v0紹介</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .tool-slide {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2b5876;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        .tool-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+        }
+        .text-content {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .text-content p {
+            margin-bottom: 15px;
+        }
+        .features {
+            background-color: rgba(78, 67, 118, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .features h3 {
+            margin-top: 0;
+            color: #4e4376;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image-caption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        .tool-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .tool-logo {
+            background-color: rgba(78, 67, 118, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            margin-right: 15px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #4e4376;
+        }
+        .tool-name {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .tool-developer {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide tool-slide">
+        <div class="tool-info">
+            <div class="tool-logo">v0</div>
+            <div>
+                <div class="tool-name">v0</div>
+                <div class="tool-developer">開発元: Vercel</div>
+            </div>
+        </div>
+        
+        <div class="tool-content">
+            <div class="text-content">
+                <p>v0はVercelが開発したAI駆動型のUI生成システムです。自然言語のプロンプトからReactコンポーネントを自動生成し、shadcn/uiとTailwind CSSをベースにした高品質なUIを提供します。</p>
+                
+                <p>デザイナーと対話するように、AIと対話しながらUIを作成できる点が特徴で、プログラミングやデザインの経験がなくても短時間で高品質なUIを作成可能です。</p>
+                
+                <div class="features">
+                    <h3>主な特徴と拡張性</h3>
+                    <ul>
+                        <li>AIとの対話型デザイン: 人間のデザイナーと対話するように、AIと対話しながらUIを作成</li>
+                        <li>スクリーンショットからのクローン機能: 既存デザインの再現が可能</li>
+                        <li>Figmaからのインポート機能: デザインツールとの連携</li>
+                        <li><strong>拡張性:</strong> 生成されたコードを直接編集可能で、React/Next.jsプロジェクトに統合できる</li>
+                        <li><strong>コミュニティ機能:</strong> 他のユーザーが作成したプロジェクトを参照・フォークできる</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <img src="images/v0_homepage.png" alt="v0のホームページ">
+                <div class="image-caption">v0のホームページ</div>
+                <img src="images/v0_examples.png" alt="v0で生成されたUIの例" style="margin-top: 20px;">
+                <div class="image-caption">v0で生成されたUIの例</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

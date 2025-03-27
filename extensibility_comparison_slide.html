@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AI時代のノーコード／ローコード開発ツール徹底比較 - 拡張性比較</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .slide {
+            width: 960px;
+            height: 540px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+        .comparison-slide {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2b5876;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: rgba(78, 67, 118, 0.1);
+            color: #4e4376;
+            font-weight: 600;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .tool-header {
+            font-weight: 600;
+            color: #2b5876;
+        }
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+        .rating-dots {
+            display: flex;
+            margin-left: 10px;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+        .dot-filled {
+            background-color: #4e4376;
+        }
+        .dot-empty {
+            background-color: #ddd;
+        }
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide comparison-slide">
+        <h1>カスタマイズと拡張性比較</h1>
+        
+        <div class="intro-text">
+            ノーコード/ローコードツールの真価は、生成されたコードやアプリケーションをどれだけ柔軟に拡張できるかにあります。ユーザーの要望に応じて、各ツールの拡張性を詳細に比較しました。
+        </div>
+        
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>ツール</th>
+                    <th>コード編集</th>
+                    <th>コンポーネント再利用</th>
+                    <th>API連携</th>
+                    <th>外部統合</th>
+                    <th>総合拡張性</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tool-header">v0 (Vercel)</td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                        <div>React/Next.jsプロジェクトに直接統合可能</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>コンポーネントのフォークと再利用が容易</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>基本的なAPI連携は可能だが制限あり</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>Figmaとの連携が強力</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tool-header">Replit</td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                        <div>完全なコード編集環境を提供</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>コンポーネント再利用は可能だが管理機能に制限</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                        <div>多様なAPIとの連携が容易</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>多数の外部サービスと統合可能</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            非常に高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tool-header">Bolt (StackBlitz)</td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                        <div>ブラウザベースの完全なコード編集環境</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>多様なテンプレートとスターターキットを提供</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>WebContainer技術によるAPI連携の柔軟性</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                        <div>多数のフレームワークとFigmaとの強力な連携</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            非常に高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tool-header">Create</td>
+                    <td>
+                        <div class="rating">
+                            中
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>パーツごとの修正は可能だが直接コード編集は制限的</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>テンプレートベースの再利用が中心</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                            </div>
+                        </div>
+                        <div>40以上の統合機能を即座に追加可能</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                        <div>多様なAIモデルとの連携が強み</div>
+                    </td>
+                    <td>
+                        <div class="rating">
+                            中〜高
+                            <div class="rating-dots">
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-filled"></div>
+                                <div class="dot dot-empty"></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
