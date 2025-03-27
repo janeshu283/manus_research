@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スライドナビゲーション使用方法</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2b5876;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #4e4376;
+            margin-top: 30px;
+        }
+        .instruction-box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .code-block {
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            padding: 15px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        .step {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .step:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #4e4376;
+        }
+        .note {
+            background-color: #fffde7;
+            border-left: 4px solid #ffd600;
+            padding: 10px 15px;
+            margin: 15px 0;
+        }
+        .screenshot {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>スライドナビゲーション機能の使用方法</h1>
+        
+        <div class="instruction-box">
+            <h2>1. ナビゲーションスクリプトの適用方法</h2>
+            <p>各スライドHTMLファイルにナビゲーションスクリプトを追加するには、以下の手順に従ってください：</p>
+            
+            <div class="step">各スライドHTMLファイル（<code>title_slide.html</code>など）を開きます。</div>
+            <div class="step">各ファイルの<code>&lt;/body&gt;</code>タグの直前に以下のコードを追加します：</div>
+            
+            <div class="code-block">
+                &lt;script src="navigation.js"&gt;&lt;/script&gt;
+            </div>
+            
+            <div class="note">
+                <strong>注意：</strong> すべてのスライドファイルに追加することで、全スライドでナビゲーション機能が有効になります。
+            </div>
+        </div>
+        
+        <div class="instruction-box">
+            <h2>2. ナビゲーション機能の特徴</h2>
+            
+            <p>追加されるナビゲーション機能には以下の特徴があります：</p>
+            
+            <ul>
+                <li><strong>ナビゲーションバー：</strong> 各スライドの下部に表示されるナビゲーションバー</li>
+                <li><strong>ホームボタン：</strong> インデックスページに戻るボタン</li>
+                <li><strong>前へ/次へボタン：</strong> 前後のスライドに移動するボタン</li>
+                <li><strong>スライド番号表示：</strong> 現在のスライド番号と総スライド数の表示</li>
+                <li><strong>キーボードナビゲーション：</strong> 矢印キーとHomeキーによるナビゲーション</li>
+            </ul>
+            
+            <p>キーボードショートカット：</p>
+            <ul>
+                <li><strong>←（左矢印）：</strong> 前のスライドに移動</li>
+                <li><strong>→（右矢印）：</strong> 次のスライドに移動</li>
+                <li><strong>Home：</strong> インデックスページに戻る</li>
+            </ul>
+        </div>
+        
+        <div class="instruction-box">
+            <h2>3. カスタマイズ方法</h2>
+            
+            <p>ナビゲーションの外観やスタイルをカスタマイズするには、<code>navigation.js</code>ファイルを編集します：</p>
+            
+            <div class="step">色やサイズを変更するには、<code>style.cssText</code>の値を編集します。</div>
+            <div class="step">ボタンのテキストを変更するには、<code>innerHTML</code>の値を編集します。</div>
+            <div class="step">スライドの順序を変更するには、<code>slideOrder</code>配列を編集します。</div>
+            
+            <div class="note">
+                <strong>ヒント：</strong> JavaScriptの知識があれば、さらに高度なカスタマイズも可能です。例えば、アニメーション効果の追加やスワイプジェスチャーのサポートなどが考えられます。
+            </div>
+        </div>
+        
+        <div class="instruction-box">
+            <h2>4. デプロイ時の注意点</h2>
+            
+            <p>ウェブサイトをデプロイする際は、以下の点に注意してください：</p>
+            
+            <div class="step">すべてのファイル（HTMLファイル、画像、JavaScriptファイル）が正しいディレクトリ構造で含まれていることを確認します。</div>
+            <div class="step">相対パスが正しく設定されていることを確認します。特に<code>../index.html</code>などのパスがデプロイ環境で正しく機能するか確認してください。</div>
+            <div class="step">デプロイ後、すべてのリンクとナビゲーション機能が正しく動作することを確認してください。</div>
+        </div>
+    </div>
+</body>
+</html>

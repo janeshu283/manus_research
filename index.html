@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI時代のノーコード／ローコード開発ツール徹底比較</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            padding: 0;
+        }
+        .subtitle {
+            font-size: 18px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        .nav-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .nav-title {
+            font-size: 24px;
+            color: #2b5876;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        .nav-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 15px;
+        }
+        .nav-item {
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .nav-item:hover {
+            background-color: #e9e9e9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .nav-item a {
+            color: #4e4376;
+            text-decoration: none;
+            font-weight: 500;
+            display: block;
+        }
+        .section-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #2b5876;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4e4376;
+            padding-bottom: 10px;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-gap: 20px;
+            margin-bottom: 20px;
+        }
+        .tool-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .tool-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #4e4376;
+            margin-bottom: 10px;
+        }
+        .tool-desc {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .tool-link {
+            display: inline-block;
+            background-color: rgba(78, 67, 118, 0.1);
+            color: #4e4376;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .tool-link:hover {
+            background-color: rgba(78, 67, 118, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
+        }
+        .deployment-section {
+            margin-top: 40px;
+        }
+        .deployment-option {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .deployment-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2b5876;
+            margin-bottom: 10px;
+        }
+        .deployment-steps {
+            margin-left: 20px;
+        }
+        .deployment-steps li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI時代のノーコード／ローコード開発ツール徹底比較</h1>
+            <div class="subtitle">v0, Replit, Bolt, Create – 最新AI開発ツールの特徴と活用法</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="nav-container">
+            <div class="nav-title">プレゼンテーションスライド一覧</div>
+            <div class="nav-list">
+                <div class="nav-item"><a href="slides/title_slide.html" target="_blank">タイトルスライド</a></div>
+                <div class="nav-item"><a href="slides/toc_slide.html" target="_blank">目次</a></div>
+                <div class="nav-item"><a href="slides/intro_slide.html" target="_blank">イントロダクション</a></div>
+                <div class="nav-item"><a href="slides/v0_slide.html" target="_blank">v0 (Vercel) の紹介</a></div>
+                <div class="nav-item"><a href="slides/replit_slide.html" target="_blank">Replit の紹介</a></div>
+                <div class="nav-item"><a href="slides/bolt_slide.html" target="_blank">Bolt (StackBlitz) の紹介</a></div>
+                <div class="nav-item"><a href="slides/create_slide.html" target="_blank">Create の紹介</a></div>
+                <div class="nav-item"><a href="slides/extensibility_comparison_slide.html" target="_blank">拡張性比較</a></div>
+                <div class="nav-item"><a href="slides/ai_capability_comparison_slide.html" target="_blank">AI機能比較</a></div>
+                <div class="nav-item"><a href="slides/development_scope_comparison_slide.html" target="_blank">開発範囲比較</a></div>
+                <div class="nav-item"><a href="slides/price_comparison_slide.html" target="_blank">価格比較</a></div>
+                <div class="nav-item"><a href="slides/usecase_analysis_slide.html" target="_blank">ユースケース分析</a></div>
+                <div class="nav-item"><a href="slides/summary_slide.html" target="_blank">総合評価</a></div>
+                <div class="nav-item"><a href="slides/conclusion_slide.html" target="_blank">まとめと将来展望</a></div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="section-title">比較対象ツール</div>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-name">v0 (Vercel)</div>
+                    <div class="tool-desc">Vercelが提供するAI駆動型UIコンポーネント生成ツール。高品質なReactコンポーネントを自然言語から生成できます。</div>
+                    <a href="slides/v0_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-name">Replit</div>
+                    <div class="tool-desc">ブラウザベースの統合開発環境とAIコーディングアシスタント。多言語対応で、フルスタック開発が可能です。</div>
+                    <a href="slides/replit_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-name">Bolt (StackBlitz)</div>
+                    <div class="tool-desc">StackBlitzが提供するAI駆動型開発ツール。WebContainer技術により、環境構築不要で開発を始められます。</div>
+                    <a href="slides/bolt_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-name">Create</div>
+                    <div class="tool-desc">複数のAIモデルを活用したノーコード開発ツール。40以上の統合機能を備え、非エンジニアでも使いやすい設計です。</div>
+                    <a href="slides/create_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <div class="section-title">比較カテゴリ</div>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-name">拡張性比較</div>
+                    <div class="tool-desc">各ツールのコード編集の自由度、コンポーネント再利用性、API連携の柔軟性などを比較します。</div>
+                    <a href="slides/extensibility_comparison_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-name">AI機能比較</div>
+                    <div class="tool-desc">対応AIモデル、プロンプト理解度、生成コード品質、複雑要件対応、生成速度を比較します。</div>
+                    <a href="slides/ai_capability_comparison_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-name">開発範囲比較</div>
+                    <div class="tool-desc">フロントエンド/バックエンド対応、データベース連携、対応言語/フレームワークなどを比較します。</div>
+                    <a href="slides/development_scope_comparison_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-name">価格比較</div>
+                    <div class="tool-desc">無料プラン、有料プラン、商用利用条件、コストパフォーマンスを比較します。</div>
+                    <a href="slides/price_comparison_slide.html" class="tool-link" target="_blank">詳細を見る</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container deployment-section">
+            <div class="section-title">このプレゼンテーションのデプロイ方法</div>
+            
+            <div class="deployment-option">
+                <div class="deployment-name">GitHub Pagesでのデプロイ</div>
+                <ol class="deployment-steps">
+                    <li>GitHubアカウントにログインし、新しいリポジトリを作成します</li>
+                    <li>このフォルダ内のすべてのファイルをリポジトリにアップロードします</li>
+                    <li>リポジトリの「Settings」→「Pages」を開きます</li>
+                    <li>Source を「main」ブランチに設定し、保存します</li>
+                    <li>数分後、GitHubがウェブサイトをデプロイし、URLが表示されます</li>
+                </ol>
+            </div>
+            
+            <div class="deployment-option">
+                <div class="deployment-name">Netlifyでのデプロイ</div>
+                <ol class="deployment-steps">
+                    <li>Netlifyアカウントを作成し、ログインします</li>
+                    <li>「New site from Git」をクリックします</li>
+                    <li>GitHubを連携し、このファイルをアップロードしたリポジトリを選択します</li>
+                    <li>デプロイ設定を確認し、「Deploy site」をクリックします</li>
+                    <li>数分後、サイトがデプロイされ、カスタムドメインの設定も可能になります</li>
+                </ol>
+            </div>
+            
+            <div class="deployment-option">
+                <div class="deployment-name">Vercelでのデプロイ</div>
+                <ol class="deployment-steps">
+                    <li>Vercelアカウントを作成し、ログインします</li>
+                    <li>「New Project」をクリックします</li>
+                    <li>GitHubを連携し、このファイルをアップロードしたリポジトリを選択します</li>
+                    <li>「Import」をクリックし、デフォルト設定のまま「Deploy」をクリックします</li>
+                    <li>数分後、サイトがデプロイされ、プロジェクトダッシュボードでURLが確認できます</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>AI時代のノーコード／ローコード開発ツール徹底比較 © 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
